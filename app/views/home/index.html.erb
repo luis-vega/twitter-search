@@ -1,0 +1,24 @@
+<div class="jumbotron">
+  <div class="container">
+    <h1>Welcome to Twitter</h1>
+    <p>Connect with your friends — and other fascinating people. Get in-the-moment updates on the things that interest you. And watch events unfold, in real time, from every angle.</p>
+    <p><%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %></p>
+  </div>
+</div>
+<div class="formsignin">
+<h2>Log in</h2>
+<%= form_for(:user, :url => session_path(:user)) do |f| %>
+  <div class="form-group">
+    <%= f.text_field :email ,class: "form-control"%>
+  </div>
+  <div class="form-group">
+    <%= f.password_field :password, class:"form-control" %>
+  </div>
+  <div class="checkbox">
+    <%= f.check_box :remember_me %>
+    <%= f.label :remember_me %>
+  </div>
+  <%= f.submit 'Sign in', class: "btn btn-default" %>
+  <%= link_to "Forgot your password?", new_password_path(:user) %>
+<% end %>
+</div>
