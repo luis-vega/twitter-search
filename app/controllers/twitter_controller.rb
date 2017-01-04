@@ -5,6 +5,7 @@ class TwitterController < ApplicationController
   def search
     query = params[:query].present? ? params[:query] : "?q=#{params[:q]}&count=10"
     @tweets = twitter_client.search(query)
+    puts @tweets
     @next_query = twitter_client.next_query
      if params[:q].present?
       recent << params[:q].to_s unless recent.include?(params[:q])

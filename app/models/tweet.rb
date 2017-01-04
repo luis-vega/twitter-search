@@ -1,4 +1,4 @@
-class Tweet < OpenStrcut
+class Tweet < OpenStruct
 
   def media
     entities['media'].present? ? entities['media'] :[]

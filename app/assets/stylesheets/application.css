@@ -11,24 +11,6 @@
  * file per style scope.
  *
  *= require_tree .
+ *= require jquery-ui/datepicker
  *= require_self
  */
-body {
-  padding: 0 30px 20px 30px;
-  font-size: 18px;
-  background-color: #4B7399;
-  margin: 0;
-}
-
-.formsignin{
-	width: 50%;
-	margin: 0 auto;
-}
-
-.post
-{
-  padding: 5px 20px 5px 20px;
-  background-color: #ffffff;
-  margin: 20px 0 20px 0;
-  color: #000000;
-} 

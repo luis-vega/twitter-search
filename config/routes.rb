@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  get 'twitter/index'
-
+  root 'twitter#index'
+  get '/search' => 'twitter#search', as: :search
+  get '/load_more' => 'twitter#load_more', as: :load_more
+  get '/recent' => 'twitter#get_recents', as: :recent
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
