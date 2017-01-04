@@ -24,3 +24,82 @@ Started GET "/" for 127.0.0.1 at 2016-05-21 22:52:13 -0500
 Processing by HomeController#index as HTML
   Rendered home/index.html.erb (14.5ms)
 Completed 200 OK in 48ms (Views: 20.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-04 10:36:08 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb (55.9ms)
+Completed 200 OK in 143ms (Views: 107.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-04 10:36:14 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb (1.3ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-01-04 10:36:34 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SDCe8YfYJ88W7pRJkOwLJrS7IauKOK8vxAjavIib9sGNpFMsXySoSvEEMky4wkfCDecoSHUP6qKwsXThhsTfNA==", "user"=>{"email"=>"luisvega29@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "luisvega29@hotmail.com"]]
+Completed 401 Unauthorized in 97ms (ActiveRecord: 0.2ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SDCe8YfYJ88W7pRJkOwLJrS7IauKOK8vxAjavIib9sGNpFMsXySoSvEEMky4wkfCDecoSHUP6qKwsXThhsTfNA==", "user"=>{"email"=>"luisvega29@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb (15.9ms)
+Completed 200 OK in 128ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-01-04 10:36:50 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SDCe8YfYJ88W7pRJkOwLJrS7IauKOK8vxAjavIib9sGNpFMsXySoSvEEMky4wkfCDecoSHUP6qKwsXThhsTfNA==", "user"=>{"email"=>"luisvega29@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "luisvega29@hotmail.com"]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.2ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SDCe8YfYJ88W7pRJkOwLJrS7IauKOK8vxAjavIib9sGNpFMsXySoSvEEMky4wkfCDecoSHUP6qKwsXThhsTfNA==", "user"=>{"email"=>"luisvega29@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb (2.5ms)
+Completed 200 OK in 77ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-01-04 10:36:57 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"It0oekexMhNSiREho90i6dNpBQt3kmLMD78gIaq0V5HnSeWnn029lrVjtySL824NajUM6IilJ0F7Bo58pOt+ZA==", "user"=>{"email"=>"luisvega29@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "luisvega29@hotmail.com"]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.2ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"It0oekexMhNSiREho90i6dNpBQt3kmLMD78gIaq0V5HnSeWnn029lrVjtySL824NajUM6IilJ0F7Bo58pOt+ZA==", "user"=>{"email"=>"luisvega29@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.2ms)
+  Rendered devise/sessions/new.html.erb (2.4ms)
+Completed 200 OK in 79ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-01-04 10:37:04 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4iph6qcFwXl28wXQURFUu8sCZWEhfq+zY1xX7F0d6XYnvqw3f/lO/JEZo9V5Pxhfcl5sgt5J6j4X5fmxU0LAgw==", "user"=>{"email"=>"luisvega29@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "luisvega29@hotmail.com"]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.2ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4iph6qcFwXl28wXQURFUu8sCZWEhfq+zY1xX7F0d6XYnvqw3f/lO/JEZo9V5Pxhfcl5sgt5J6j4X5fmxU0LAgw==", "user"=>{"email"=>"luisvega29@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.2ms)
+  Rendered devise/sessions/new.html.erb (2.0ms)
+Completed 200 OK in 77ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-01-04 10:38:39 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vGEEXu3xA/g/ZeN1Jucg/du5paQe5qXjuRYTX0C0utF59cmDNQ2MfdiPRXAOyWwZYuWsR+HR4G7Nr70CTuuTJA==", "user"=>{"email"=>"luisvega29@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "luisvega29@hotmail.com"]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.1ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vGEEXu3xA/g/ZeN1Jucg/du5paQe5qXjuRYTX0C0utF59cmDNQ2MfdiPRXAOyWwZYuWsR+HR4G7Nr70CTuuTJA==", "user"=>{"email"=>"luisvega29@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb (2.1ms)
+Completed 200 OK in 74ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-04 10:38:43 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb (1.6ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.0ms)

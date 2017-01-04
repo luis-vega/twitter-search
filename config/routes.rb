@@ -1,18 +1,11 @@
 Rails.application.routes.draw do
-  devise_for :users
-  resources :posts
+  get 'twitter/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-  resources :users do
-    member do
-      get :following, :followers
-    end
-  end
-  get '/:id', to: 'users#show', as: 'profile'
-  resources :relationships,       only: [:create, :destroy]
+
   # You can have the root of your site routed with "root"
-   root 'home#index'
+  #root 'home#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
